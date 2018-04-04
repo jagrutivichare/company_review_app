@@ -1,0 +1,93 @@
+{
+  "companies": [{
+    "name" : "Capgemini",
+    "id" : 1,
+    "total_reviews" : 5,
+    "reviews" : ["Great environment with a lot of oportunities. Fast paced with proper empowerment to its executives", 
+      "Women and people of color (excluding Asian-Indian) are still hugely the minority in leadership positions. The company needs to continue to creat a culture that the requirements for leadership are inviting to strong diverse candidates.",
+      "There are so many local and global career opportunities within the firm making it possible for employees to work in various places and parts of the business. When seeking new roles, employees can legitimately start within first before moving externally.",
+      "Capgemini is in downtown Pensacola, has really good benefits, and is a way to get into the medical industry without actually having to deal with sick patients. The pay is good and there are international opportunities.",
+      "It was a great experience working with this company. The work culture is great and there are lot of opportunities to learn new technologies / new things."],
+    "ratings": 3,
+    "description" : "Capgemini SE is a French multinational professional services and business consulting corporation headquartered in Paris, France. It provides IT services and is one of the world's largest IT consulting, outsourcing and professional services companies",
+    "image" : "capgemini.png"
+  },
+  {
+    "name" : "Infosys",
+    "id" : 2,
+    "total_reviews" : 3,
+    "reviews" : ["A good place to gain knowledge on Software and testing tools. A good place to learners and to start software life.", 
+      "Great work experience witb talented team love to be a part of thia great companay no iaaue for me",
+      "Extreme pressure. Communication issues with remote teams can lead to loss of reputation"],
+    "ratings": 2,
+    "description" : "Infosys Limited (formerly Infosys Technologies Limited) is an Indian multinational corporation that provides business consulting, information technology and outsourcing services. It has its headquarters in Bengaluru, Karnataka, India.",
+    "image" : "infosys.png"
+  },
+  {
+    "name" : "Google",
+    "id" : 3,
+    "total_reviews" : 4,
+    "reviews" : ["The scale of the infrastructure to index all things available on the internet are incredible. Push everything in computer science to extreme. Have infinite number of interesting technical problems to pursue.",
+      "It is sometimes harder to change the bottom infrastructure with all the product development going on built on top of it.",
+      "High bar for hiring which is pretty cool",
+      "Limited to specific role given the size, things move slow, lots of politics due to ambiguous boundary of roles / projects"],
+    "ratings": 4,
+    "description" : "Google LLC is an American multinational technology company that specializes in Internet-related services and products, which include online advertising technologies, search engine, cloud computing, software, and hardware.",
+    "image" : "google.png"
+  },
+  {
+    "name" : "Facebook",
+    "id" : 4,
+    "total_reviews" : 6,
+    "reviews" : ["People are smart and friendly.",
+      "The press hates us and users don't trust us.",
+      "- If you don't learn to make the work life balance work for you, it can be exhausting. But you'll also be given lots of support with this if you ask for it.- It doesn't matter how good you are at your job, chances are you're going to be surrounded by a ton of other people who are just as good if not better. Imposter syndrome is real, but if you got an offer, you probably belong here too.",
+      "I'm a female Software Engineer at Facebook. This is the best company I have ever worked for and am so insanely happy to be here. Every day I wake up excited and grateful to be working here. Even in such a large company, I feel like I get the support I need and while also having impact. Everyone is so smart, nice, and always willing to help.",
+      "Brand recognition sometimes gets in the way of all the good we're doing. We have to move past the noise and see the greater/bigger picture. The media likes to sensationalize things, and that's not always easy to read/see. At the end of the day, FB is doing good. I strongly believe this.",
+      "Culture, Culture, Culture, Food, Culture"],
+    "ratings": 4,
+    "description" : "Facebook is an American online social media and social networking service company based in Menlo Park, California.",
+    "image" : "facebook.png"
+  },
+  {
+    "name" : "TIBCO Software",
+    "id" : 5,
+    "total_reviews" : 3,
+    "reviews" : ["Innovative products and interesting Markets",
+      "Great company to work with decent benefits. The products are amazing and mature with good compatability with cloud and digit transformation.",
+      "New management destroyed most departments. Most of the A players left early."],
+    "ratings": 4,
+    "description" : "TIBCO's products and solutions help customers gain competitive advantages through interconnecting everything and augmenting intelligence. We help our customers integrate their people, data, and systems and to better manage and understand their business to make decisions and act in real time.",
+    "image" : "tibco.png"
+  },
+  {
+    "name" : "Cognizant Technology Solutions",
+    "id" : 6,
+    "total_reviews" : 2,
+    "reviews" : ["Career advancement, Great work life balance!",
+      "Exposure to Fortune 100 companies, New technologies and cross functional teams."],
+    "ratings": 3,
+    "description" : "Cognizant (NASDAQ: CTSH) is a leading provider of information technology, consulting, and business process services, dedicated to helping the world's leading companies build stronger businesses. Headquartered in Teaneck, New Jersey (U.S.), Cognizant combines a passion for client satisfaction, technology innovation, deep industry and business process expertise, and a global, collaborative workforce that embodies the future of work. With over 100 development and delivery centers worldwide and approximately 244,300 employees as of June 30, 2016, Cognizant is a member of the NASDAQ-100, the S&P 500, the Forbes Global 2000, and the Fortune 500 and is ranked among the top performing and fastest growing companies in the world.",
+    "image" : "cognizant.png"
+  },
+  {
+    "name" : "Accenture",
+    "id" : 7,
+    "total_reviews" : 1,
+    "reviews" : ["Accenture is a great place to start your career. The people around you are bright, always willing to help, and teach you the skill required to be confident going into any other role."],
+    "ratings": 4,
+    "description" : "Accenture solves our clients' toughest challenges by providing unmatched services in strategy, consulting, digital, technology and operations. We partner with more than three-quarters of the Fortune Global 500, driving innovation to improve the way the world works and lives. With expertise across more than 40 industries and all business functions, we deliver transformational outcomes for a demanding new digital world.",
+    "image" : "accenture.png"
+  },
+  {
+    "name" : "J.P. Morgan",
+    "id" : 8,
+    "total_reviews" : 3,
+    "reviews" : ["Great place to learn essential skills and the culture is great.",
+      "Bureaucracy, often too many obstacles to get things done. Many managers and senior leaders are just not good at what they do. Either not good at managing others or simply not good at leading. A title doesn't = effective leadership. I was blessed to have great colleagues and good managers, but that is not always the case for everyone.",
+      "Lots of turnover in management"],
+    "ratings": 3,
+    "description" : "J.P. Morgan has been doing first-class business in a first-class way for more than 200 years. We have been a leading player in helping companies grow and markets develop throughout our history. We work in collaboration across the globe to deliver the best solutions and advice to meet our clients' needs anywhere in the world. We operate in 150 countries, and hold global leadership positions across our businesses.",
+    "image" : "jpmorgan.png"
+  }]
+}

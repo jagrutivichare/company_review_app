@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <% include partials/head.ejs %>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <form method="post" style="margin: 4%">
+      <fieldset>
+        <legend>Add Review</legend>
+
+        <div class="form-group">
+          <label for="labelForName">Name</label>
+          <input type="text" class="form-control" id="labelForName" name="labelForName" placeholder="Enter name">
+        </div>
+
+        <div class="form-group">
+          <label for="labelForPosition">Position</label>
+          <input type="text" class="form-control" id="labelForPosition" name="labelForPosition" placeholder="Enter position">
+        </div>
+
+        <div class="form-group">
+          <label for="select1">Select Ratings</label>
+          <select class="form-control" id="select1" name="select1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="labelForComment">Comment</label>
+          <textarea class="form-control" placeholder="Add review" id="companyReview" name="companyReview" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Add</button>
+        <a href="/company_reviews/<%= company.id %>"><button type="button" class="btn btn-secondary">Close</button></a>
+      </fieldset>
+    </form>
+
+  </body>
+</html>

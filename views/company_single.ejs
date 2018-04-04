@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<% include partials/head.ejs %>
+  	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  	
+  	<% include partials/header1.ejs %>
+
+    <div class="content-padding" style="background-image: url('/images/cover.jpg') ; height: 320px;">
+
+      <div class="company">
+        <img src="/images/<%= company.image %>" class="img-responsive" style="width:280px;height:200px;" >
+      </div>
+
+      <div class="description-wrapper">        
+        <div>
+          <span class="badge badge-primary" style="margin-top: 10px;">Description</span>
+          <p><%= company.description %></p>
+        </div>
+
+        <div>
+          <div style="width: 33%">
+              <span class="badge badge-primary" style="margin-top: 5px;">Ratings</span>
+              <div>
+                <% for (var i=0; i< company.ratings; i++) { %>
+                  <i class="fas fa-star" style="color:green"></i>
+                <% } %>
+                <% for (var i=0; i< (5-company.ratings); i++) { %>
+                  <i class="far fa-star"></i>
+                <% } %> 
+              </div>    
+          </div>
+          <div style="float: right; width: 33%; margin-top: -45px;">
+              <span class="badge badge-primary" style="margin-top: 5px;">Number of reviews</span>
+              <div><%= company.total_reviews %> </div>    
+          </div>
+          <div style="float: right; width: 33%; margin-top: -45px;">
+              <span class="badge badge-primary" style="margin-top: 5px;">Website</span>
+              <div><%= company.website %> </div>    
+          </div>
+        </div>
+
+        <div style="margin-top: 20px;">
+          <div style="width: 33%">
+              <span class="badge badge-primary" style="margin-top: 5px;">Headquarters</span>
+              <div><%= company.headquarters %> </div>  
+          </div>
+          <div style="float: right; width: 33%; margin-top: -45px;">
+              <span class="badge badge-primary" style="margin-top: 5px;">Size</span>
+              <div><%= company.size %> </div>  
+          </div>
+          <div style="float: right; width: 33%; margin-top: -45px;">
+              <span class="badge badge-primary" style="margin-top: 5px;">Founded</span>
+              <div><%= company.founded %> </div>  
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    
+      <div class="content-padding" style="margin: 2%">
+        <span class="badge badge-primary" style="margin: 10px;">Reviews</span>
+        <a style="float: right; margin-bottom: 10px;margin-right: 10px;" href="/company_reviews/<%= company.id %>/add-review"><button type="button" class="btn btn-outline-primary">Add a review</button></a>
+
+        <% if (company.reviews.length > 0) { %>
+          <div style="margin-top: 10px" class="list-group">
+            <% for (var i=0; i< company.reviews.length; i++) { %>
+
+              <div class="list-group">
+                <a class="list-group-item align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1"><%= company.reviews[i].position %></h5>
+                    <div>
+                      <% for (var j=0; j< company.reviews[i].ratings; j++) { %>
+                        <i class="fas fa-star" style="color:green"></i>
+                      <% } %>
+                      <% for (var j=0; j< (5-company.reviews[i].ratings); j++) { %>
+                        <i class="far fa-star"></i>
+                      <% } %> 
+                    </div> 
+                  </div>
+                  <% if (company.reviews[i].name == "") { %>
+                    <small>Anonymous</small>  
+                  <% } else { %>
+                    <small><%= company.reviews[i].name %></small>
+                  <% } %>       
+                </a>
+                <a class="list-group-item flex-column align-items-start">
+                  <p class="mb-1"><%= company.reviews[i].comment %></p>
+                </a>
+                <br />
+              </div>
+
+            <% } %>
+          </div>
+        <% } else { %>
+          <div>
+              <small class="text-muted"><I>No reviews</I></small>
+          </div>
+        <% } %>
+      </div>
+
+        
+    
+
+    
+    <% include partials/footer.ejs %>
+    <% include partials/scripts.ejs %>
+
+  </body>
+</html>
+
+
+
